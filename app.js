@@ -29,6 +29,9 @@ app.get('/Projects', home.Projects);
 app.get('/Coding', home.Coding);
 app.get('/Contact', home.Contact);
 
+app.set('port', 8080);
+app.listen(app.get('port'));
+
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
