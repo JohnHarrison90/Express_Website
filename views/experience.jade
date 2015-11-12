@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  .container(style="height:500px;" ng-controller="HomeCntrl_Resume")
+    .row
+      .col-md-12
+        .ExperienceTitle
+          span Experience
+        timeline
+          timeline-event(ng-repeat="x in Experience" ng-show="x.Role != ''")
+            timeline-badge(class='{{x.badgeClass}}')
+              span.glyphicon(class='{{x.badgeIconClass}}')
+            timeline-panel(class='{{x.badgeClass}}')
+              .media
+                  .media-left
+                    span
+                      img.media-object(style="width: 80px; height: 80px;" src="/Resources/{{x.imglink}}")
+                  .media-body
+                    h4.media-heading {{x.Company}} | {{x.Organization}}
+                    span {{x.Role}} <br/>
+                    span {{x.Role_Title}} <br/>
+                    span {{x.Start_Date}} - {{x.End_Date}}    <i>{{x.Location}}</i>
+              div.list-group
+                div.list-group-item(ng-repeat="y in x.Bullets")  {{y}}
+  script(src='/lib/social-share/share.min.js')
+  script(src='/resources/ProfessionalToolKit.js')
+  script(src='/resources/Experience.js')
+
+
+

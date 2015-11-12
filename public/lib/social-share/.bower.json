@@ -1,0 +1,14 @@
+{
+  "name": "social-share",
+  "homepage": "https://github.com/popomore/social-share",
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "6f21fdb5c55aeba674bb0b0807f03b4cd37d8ea1"
+  },
+  "_source": "git://github.com/popomore/social-share.git",
+  "_target": "~0.1.0",
+  "_originalSource": "social-share"
+}

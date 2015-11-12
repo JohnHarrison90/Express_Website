@@ -1,0 +1,156 @@
+.Landing_Page{
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 80; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+.Personal_Logo{
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+}
+.Personal_Logo .FirstLetter{
+  color: #BF2429;
+
+  font-size: 52px;
+}
+.Personal_Logo:before {
+    content: "{";
+}
+.Personal_Logo:after {
+    content: "}";
+}
+.Professiona_Developer {
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 36px;
+  font-style: underline;
+  text-align: center;
+}
+.body{
+
+}
+.socialMediaButton{
+  width: 150px;
+}
+.siteInteractionButtonHolder{
+  height:100%;
+}
+.siteInteractionButtons{
+  height:100%;
+  width: 100%;
+}
+.site-text{
+    font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+    font-size: 16px;
+}
+
+
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #bf2429;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #bf2429;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #ffffff;
+  background-color: #bf2429;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #bf2429;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #bf2429;
+}
+.navbar-default .navbar-toggle {
+  border-color: #bf2429;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #bf2429;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #bf2429;
+  }
+}
+
+@media (min-width: 767px) {
+  .timeline li{
+    margin: 0 0 -80px 0;
+  }
+
+}
+
+.glyphicons{
+  vertical-align: unset;
+}
+
+.panel{
+  margin-bottom:unset;
+  border:unset;
+}
+
+.panel-default>.panel-heading {
+    color: #bf2429;
+    background-color: #FFF;
+    border-color: #000;
+}
+
+.ExperienceTitle{
+  font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
+  font-size: 36px;
+
+}
+@media (min-width: 767px) {
+  .ExperienceTitle{
+    padding-top: 20px; 
+    margin-bottom:-80px;
+  }
+}

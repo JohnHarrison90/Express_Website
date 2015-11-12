@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .container(style="height:500px;")
+    .row
+      .col-md-2(style="text-align:center;")
+        ul.list-group
+          li.btn.btn-block.btn-social.btn-google #[span.fa.fa-google] Email
+          a.list-group-item(href="http://stackoverflow.com/users/4760411/john-harrison")
+            span Stack Overflow
+          a.list-group-item(href="https://github.com/JohnHarrison90")
+            span Git Profile
+          a.list-group-item(href="http://jsfiddle.net/user/dashboard/")
+            span JS Fiddle
+          a.list-group-item(href="https://github.com/JohnHarrison90/JPW")
+            span This Website On GIT
+      .col-md-7
+        div.Professiona_Developer
+          span Coding
+        span.site-text 
+          span More to come!  Check back later for an update on the daily challenge!
+      .col-md-2(ng-controller="HomeCntrl_Professional_TK")
+        div(ng-repeat="x in ProfessionalToolKit")
+          .panel.panel-default 
+            .panel-heading(style="padding:2px 5px;")
+              h4(style="    margin-bottom: 1px;") {{x.area}}
+            .panel-body(ng-repeat="y in x.subAreas" style="padding:2px;")
+              div {{y.subArea}}
+              div.label.label-default(style="margin:2px; font-size:14px; display: inline-block;" ng-repeat="z in y.exp") {{z}}
+
+  script(src='/resources/ProfessionalToolKit.js')
+
+

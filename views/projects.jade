@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  .container(style="height:500px;")
+    .row      
+      .col-md-10
+        div.Professiona_Developer
+          span More to Come
+        span.site-text In Development
+      .col-md-2(ng-controller="HomeCntrl_Professional_TK")
+        div(ng-repeat="x in ProfessionalToolKit")
+          .panel.panel-default 
+            .panel-heading(style="padding:2px 5px;")
+              h4(style="    margin-bottom: 1px;") {{x.area}}
+            .panel-body(ng-repeat="y in x.subAreas" style="padding:2px;")
+              div {{y.subArea}}
+              div.label.label-default(style="margin:2px; font-size:14px; display: inline-block;" ng-repeat="z in y.exp") {{z}}
+
+  script(src='/resources/ProfessionalToolKit.js')
+

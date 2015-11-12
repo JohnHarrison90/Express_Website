@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .container(style="height:500px;" ng-controller="HomeCntrl_Resume")
+    .row
+      .col-md-3(style="text-align:center;")
+        div.Personal_Logo
+          span.FirstLetter J
+          span ohn 
+          span.FirstLetter R
+          span . <br/>
+          span.FirstLetter H
+          span arrison
+        span.btn.btn-block.btn-social.btn-google #[span.fa.fa-google] Email
+        span.btn.btn-block.btn-social.btn-linkedin #[span.fa.fa-linkedin] LinkedIn
+      .col-md-6
+        div.Professiona_Developer
+          span Professional Developer
+        span.site-text Expert of coding timelines with a proven track record of excellence in coding development. Comfortable working from 7am to coordinate with offshore to 9pm to build out platforms; the work day doesn’t end until the project is on track. Code reviews and coaching are integral in this process. <br/><br/> Known for mastery in C#, JavaScript (Node.JS and Angular) and WCF Services. A developer that contributes fast prototyping for constant feedback. A professional that values quality teams and code to implement incredible on-time products.
+      .col-md-3
+        div Professional Tool Kit:
+        div(ng-repeat="x in ProfessionalToolKit")
+          {{x.area}}
+          ul(ng-repeat="y in x.subAreas")
+            li {{y.subArea}}
+              ul(ng-repeat="z in y.exp")
+                li {{z}}
+  script(src='/lib/social-share/share.min.js')
+  script(src='/resources/ProfessionalToolKit.js')
+
+
