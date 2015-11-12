@@ -18,13 +18,12 @@ block content
                   .media-body
                     h4.media-heading {{x.Company}} | {{x.Organization}}
                     span {{x.Role}} <br/>
-                    span {{x.Role_Title}} <br/>
+                    span {{x.Role_Title}} <br/>  
                     span {{x.Start_Date}} - {{x.End_Date}}    <i>{{x.Location}}</i>
               div.list-group
                 div.list-group-item(ng-repeat="y in x.Bullets")  {{y}}
-  script(src='/lib/social-share/share.min.js')
-  script(src='/resources/ProfessionalToolKit.js')
-  script(src='/resources/Experience.js')
+  script(src='/Resources/ProfessionalToolKit.js')
+  script(src='/Resources/Experience.js')
 
 
 
