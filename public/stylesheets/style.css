@@ -5,14 +5,18 @@
   display: flex;
   align-items: center;
 }
+.Labels_For_Codes{
+  margin:2px; font-size:14px; display: inline-block;
+}
 .Personal_Logo{
   font-family: Rockwell, "Courier New", Courier, Georgia, Times, "Times New Roman", serif;
-  font-size: 40px;
+  font-size: 20px;
+  font-weight: normal;
 }
 .Personal_Logo .FirstLetter{
   color: #BF2429;
 
-  font-size: 52px;
+  font-size: 36px;
 }
 .Personal_Logo:before {
     content: "{";
@@ -51,16 +55,16 @@
   border-color: #bf2429;
 }
 .navbar-default .navbar-brand {
-  color: #000000;
+  color: #000;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #ffffff;
 }
 .navbar-default .navbar-text {
-  color: #000000;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #000000;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   color: #ffffff;
@@ -70,7 +74,7 @@
   background-color: #ffffff;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
-  color: #000000;
+  color: #ffffff;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
@@ -153,4 +157,37 @@
     padding-top: 20px; 
     margin-bottom:-80px;
   }
+}
+
+.Coding_Section{
+  background-image: url("/Resources/LandingBackground.png");
+  background-size:300%;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+.Blog_Section{
+  background-image: url("/Resources/LandingBackground.png");
+  background-size:300%;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+.Experience_Section{
+  background-image: url("/Resources/LandingBackground.png");
+  background-size:300%;
+  background-repeat: no-repeat;
+}
+@media (min-width: 767px) {
+  .FrontButtons div{
+  }
+}
+.FrontButtons{
+  text-align: center;
+  margin: 0;
+  vertical-align: bottom;
+
+  background-position:  center;
+  background-size: 
+}
+.FrontButtons span{
+
 }

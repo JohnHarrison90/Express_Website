@@ -17,6 +17,10 @@ Home_App.controller('HomeCntrl_Resume', ['$scope', function($scope) {
   $scope.Experience = Experience;
 }]);
 
+Home_App.controller('HomeCntrl_Projects', ['$scope', function($scope) {
+  $scope.Projects = Projects;
+}]);
+
 Home_App.controller('HomeCntrl_Professional_TK', ['$scope', function($scope) {
   $scope.ProfessionalToolKit = Professional_TK;
 }]);

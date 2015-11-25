@@ -1,0 +1,36 @@
+.Landing_Page{
+  min-height: 80%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 600px; /* These two lines are counted as one :-)       */
+  height: 75%;
+  margin:0px 0 0 0;
+  background-size:cover;
+  display: flex;
+  align-items: center;
+  background-image: url("/Resources/BG_ATTMPT3.png");
+  max-height: 800px;
+}
+.navbar-default {
+  border-color: #bf2429;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+}
+.navbar-default .navbar-brand {
+  color: #000;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #bf2429;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #ffffff;
+}

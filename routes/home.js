@@ -1,6 +1,6 @@
 /* GET home page. */
 exports.index = function(req, res){
-  res.render('home', { title: 'Home' });
+  res.render('LandingPage', { title: 'Home' });
 };
 
 exports.Projects = function(req, res){

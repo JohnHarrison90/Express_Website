@@ -1,20 +1,27 @@
 extends layout
 
 block content
-  .container(style="height:500px;")
+  .container(style="height:500px; margin-top:70px;")
     .row      
-      .col-md-10
+      .col-xs-10(ng-controller="HomeCntrl_Projects")
         div.Professiona_Developer
-          span More to Come
-        span.site-text In Development
-      .col-md-2(ng-controller="HomeCntrl_Professional_TK")
+          span Projects
+        div.sitetext(ng-repeat="x in Projects" style="margin-top:30px;")
+          h3 {{x.Name}}
+          h5 <i>{{x.TagLine}}</i> <br/>
+          h4 {{x.startDate}} - {{x.endDate}} <br/>
+          span {{x.Desc}} <br/>
+          span Languages:
+          span(ng-repeat="y in x.Languages")
+            .Labels_For_Codes.label.label-default{{y}}
+      .col-xs-2(ng-controller="HomeCntrl_Professional_TK")
         div(ng-repeat="x in ProfessionalToolKit")
           .panel.panel-default 
             .panel-heading(style="padding:2px 5px;")
-              h4(style="    margin-bottom: 1px;") {{x.area}}
+              h4(style="margin-bottom: 1px;") {{x.area}}
             .panel-body(ng-repeat="y in x.subAreas" style="padding:2px;")
               div {{y.subArea}}
               div.label.label-default(style="margin:2px; font-size:14px; display: inline-block;" ng-repeat="z in y.exp") {{z}}
-
+  script(src='/Resources/Projects.js')
   script(src='/Resources/ProfessionalToolKit.js')
 
