@@ -16,10 +16,10 @@ html( ng-app="Home_App")
 
   body
     script(src='/lib/angular/angular.js')
-    nav.navbar.navbar-default.navbar-fixed-top
+    nav.navbar.navbar-default.navbar-fixed-top(ng-controller="Home_Cntrl_NavHandler")
       .container
         .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          button.navbar-toggle(ng-click="navbarCollapsed = !navbarCollapsed")
             span.sr-only Toggle navigation
             span.icon-bar
             span.icon-bar
@@ -27,7 +27,7 @@ html( ng-app="Home_App")
           a.navbar-brand.site-text(style="color:#0; font-size:32px" href='#') {
             span.site-text(style="color:#BF2429; font-size:32px") JRH
             span.site-text(style="color:#0; font-size:32px") }
-        #navbar.navbar-collapse.collapse(ng-controller="Home_Cntrl_NavHandler")
+        .navbar-collapse.collapse(collapse="navbarCollapsed")
           ul.nav.navbar-nav(ng-repeat="x in menuItems")
             li(ng-class="{ 'active' : x === page }")
               a(href="{{x}}") {{x}}
@@ -40,6 +40,8 @@ html( ng-app="Home_App")
         // /.nav-collapse
       // /.container-fluid
     block content
+    script(src='/lib/angular-animate/angular-animate.min.js')
+    script(src='/lib/angular-bootstrap/ui-bootstrap-tpls.min.js')
     script(src='/lib/angular-timeline-master/dist/angular-timeline.js')
     script(src='/controllers/Home_Cntrl.js')
     script page="#{title}";

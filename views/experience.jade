@@ -8,7 +8,7 @@ block content
           span Experience
         timeline
           timeline-event(ng-repeat="x in Experience" ng-show="x.Role != ''")
-            timeline-badge.safariCenter(class='{{x.badgeClass}}')
+            timeline-badge.safariCenter.timeline-badgeJRH(class='{{x.badgeClass}}')
               span.glyphicon(class='{{x.badgeIconClass}}')
             timeline-panel(class='{{x.badgeClass}}')
               .media

@@ -1,4 +1,4 @@
-var Home_App = angular.module('Home_App',['angular-timeline']);
+var Home_App = angular.module('Home_App',['angular-timeline','ui.bootstrap','ngAnimate']);
 
 
 Home_App.controller('Home_Cntrl_', ['$scope', function($scope) {
@@ -10,6 +10,7 @@ Home_App.controller('Home_Cntrl_NavHandler', ['$scope', function($scope) {
   $scope.menuItems = ["Home", "Experience","Projects","Coding"];
   $scope.rightItems = ["Contact"];
   $scope.page = page;
+  $scope.navbarCollapsed = true;
 }]);
 
 Home_App.controller('HomeCntrl_Resume', ['$scope', function($scope) {
