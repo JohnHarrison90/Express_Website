@@ -191,3 +191,9 @@
 .FrontButtons span{
 
 }
+
+.safariCenter{
+  display: -webkit-inline-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
