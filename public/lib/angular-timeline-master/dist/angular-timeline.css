@@ -11,7 +11,9 @@
   width: 3px;
   background-color: #cccccc;
   left: 50%;
-  margin-left: -1.5px; }
+  margin-left: -1.5px; 
+
+}
 
 .timeline li {
   margin-bottom: 20px;

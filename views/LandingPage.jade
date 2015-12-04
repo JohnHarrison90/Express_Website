@@ -3,7 +3,7 @@ extends layout
 block content
   link(rel='stylesheet', href='/stylesheets/LP-Style.css')
   .Main_Page
-    .container(style="width:100%;") 
+    .container(style="width:100%; padding:0px;") 
       .row.Landing_Page.FrontButtons
         .col-xs-12.safariCenter(style="text-align:center; padding-bottom:50px; height:100%;")
             span.Personal_Logo.sitetext
@@ -17,8 +17,16 @@ block content
       .row(style="margin-top: 30px;")
         .col-sm-6.col-sm-offset-3
           .Professiona_Developer
-            span Professional Developer
-          span.site-text Expert of coding timelines with a proven track record of excellence in coding development. Comfortable working from 7am to coordinate with offshore to 9pm to build out platforms; the work day doesn’t end until the project is on track. Code reviews and coaching are integral in this process. <br><br> Known for mastery in C#, JavaScript (Node.JS and Angular) and WCF Services. A developer that contributes fast prototyping for constant feedback. A professional that values quality teams and code to implement incredible on-time products.<br><br> Based in the Tampa Area
-          iframe(height='400', width="100%", frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ52xEBpjEwogRQfewb4K7tI8&key=AIzaSyAswWKDaUFlrqE_6KO1C1bj2kL9R_YoEtw', allowfullscreen='')
+            span About<br>
+          span <br>
+          a.btn.btn-block.btn-social.btn-pinterest(href="/Resources/JohnHarrisonResume.pdf") #[span.glyphicons.glyphicons-notes] Resume            
+          span.site-text <br/> Expert of coding timelines with a proven track record of excellence in coding development. Comfortable working from 7am to coordinate with offshore to 9pm to build out platforms; the work day doesn’t end until the project is on track. Code reviews and coaching are integral in this process. <br><br> Known for mastery in C#, JavaScript (Node.JS and Angular) and WCF Services. A developer that contributes fast prototyping for constant feedback. A professional that values quality teams and code to implement incredible on-time products.<br><br> 
+          div.Professiona_Developer
+            span Contact
+          a.btn.btn-block.btn-social.btn-google(href="mailto:JohnRussellHarrison@gmail.com") #[span.fa.fa-google] Email
+          a.btn.btn-block.btn-social.btn-linkedin(href="https://www.linkedin.com/in/jrharr") #[span.fa.fa-linkedin] LinkedIn
+          a.btn.btn-block.btn-social.btn-facebook(href="https://www.facebook.com/JohnRussellHarrison") #[span.fa.fa-facebook] FaceBook
 
+          span <br><br> Based in the Tampa Area
+          iframe(height='400', width="100%", frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ52xEBpjEwogRQfewb4K7tI8&key=AIzaSyAswWKDaUFlrqE_6KO1C1bj2kL9R_YoEtw', allowfullscreen='')
 
