@@ -5,9 +5,9 @@ Home_App.controller('Home_Cntrl_', ['$scope', function($scope) {
   $scope.greeting = 'Hola!';
 }]);
 
-
+//TODO: Add Back In Coding
 Home_App.controller('Home_Cntrl_NavHandler', ['$scope', function($scope) {
-  $scope.menuItems = ["Home", "Experience","Projects","Coding"];
+  $scope.menuItems = ["Home", "Experience","Projects"];//,"Coding"
   $scope.rightItems = ["Contact"];
   $scope.page = page;
   $scope.navbarCollapsed = true;
